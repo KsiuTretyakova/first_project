@@ -74,6 +74,8 @@
 letter1 = input("Enter letter1: ")
 letter2 = input("Enter letter2: ")
 
+# (letter1.lower() == letter2.lower()) and (letter1 < letter2)
+
 if letter1.lower() == letter2.lower():
     if letter1 < letter2:
         print("First letter:", letter1, "Second letter:", letter2)
