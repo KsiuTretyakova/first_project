@@ -41,21 +41,27 @@
 # print(number * n)
 # print("   ^^ ^^   " * n)
 
-n = int(input())
+number_p = int(input())
 
 p1 = "    _~_    "
 p2 = "   (o o)   "
 p3 = "  /  V  \\  "
 p5 = "   ^^ ^^   "
 
-print(p1 * n)
-print(p2 * n)
-print(p3 * n)
+print(p1 * number_p)
+print(p2 * number_p)
+print(p3 * number_p)
 
-nums = "1 2 3 4 5 6 7 8 9"[:2*n]
-p4 = " /(  " + "  )\\ ".join(nums.split())
+nums = "1 2 3 4 5 6 7 8 9"[:2*number_p]
+# p4 = " /(  " + "  )\\  /(  ".join(nums.split()) + "  )\\ "
+p4 = " /(  " + r"  )\  /(  ".join(nums.split()) + r"  )\ "
 print(p4)
+
+# for n in range(1, number_p+1):
+#     print(f" /(  {n}  )\\ ", end="")
+
 # p4 = " /(  "+ str(n) +r"  )\ "
 
-
-print(p5 * n)
+# print()
+print("\n" + p5 * number_p)
+# print(r"\n" + p5 * number_p)
