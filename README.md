@@ -11,3 +11,6 @@
 - topic for studying "String -> `str()`"
     - `tasks_string.md` - tasks on the topic
     - `string.py` - lesson file
+- topic for studying "Loops -> `for` and `while`"
+    - `tasks_for_while.md` - tasks on the topic
+    - `for_while.py` - lesson file
