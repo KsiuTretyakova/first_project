@@ -44,14 +44,19 @@
 
 
 #4
-languages = "Ukrainian French Bulgarian Norwegian Latvian"
-list_lang = languages.split()
-list_lang.sort()
-# print(list_lang)
-print(" ".join(list_lang))
-
-
-
 # languages = "Ukrainian French Bulgarian Norwegian Latvian"
 # list_lang = languages.split()
-# print(" ".join(sorted(list_lang)))
+# list_lang.sort(reverse=True)
+# # print(list_lang)
+# print(" ".join(list_lang))
+
+
+
+languages = "Ukrainian French Bulgarian Norwegian Latvian"
+list_lang = languages.split()
+print(list_lang)
+
+print(" ".join(sorted(list_lang, reverse=True)))
+
+
+print(list_lang[::-1])
