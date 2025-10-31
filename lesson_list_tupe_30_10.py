@@ -112,12 +112,66 @@ def task10():
 # --------------------------------------
 #18
 
-text = "horse,  cat, parrot,Goldfish, dog"
-# text_list = text.split(", ")
-text_list = text.split(",")
-text_list = [w.strip() for w in text_list]
+# text = "horse,  cat, parrot,Goldfish, dog"
+# # text_list = text.split(", ")
+# text_list = text.split(",")
+# text_list = [w.strip() for w in text_list]
 
-text_list.sort(key=str.lower, reverse=True)
+# text_list.sort(key=str.lower, reverse=True)
 
-print(text_list)
-print(", ".join(text_list))
+# print(text_list)
+# print(", ".join(text_list))
+
+# --------------------------------------
+#17
+
+n = int(input("n: "))
+m = int(input("m: "))
+
+# for row in range(n):  # проходить по діапазону від 0 до (n-1)
+#     for col in range(m):  # проходить по діапазону від 0 до (m-1)
+#         if (row + col) % 2 == 0:
+#             print(".", end=" ")
+#         else:
+#             print("*", end=" ")
+            
+#     print()
+
+# n x m
+result = []
+# m_list = []
+
+for row in range(n):  # проходить по діапазону від 0 до (n-1)
+    m_list = []
+    for col in range(m):  # проходить по діапазону від 0 до (m-1)
+        if (row + col) % 2 == 0:
+            # print(".", end=" ")
+            m_list.append(".")
+        else:
+            # print("*", end=" ")
+            m_list.append("*")        
+    # print()
+    result.append(m_list)
+  
+print(result)
+
+
+
+[
+    [[0, 0], [0, 0], [0, 0]], 
+    
+    [[0, 0], [0, 0], [0, 0]], 
+    
+    [[0, 0], [0, 0], [0, 0]]
+]
+
+# range(n) -> від 0 до (n-1)
+# range(k, n) -> від k до (n-1)
+# range(k, n, s) -> від k до (n-1) з кроком s  -> [k, k + s, k+s + s, ..., (n-1)]
+
+# range(1, 7, 3) -> [1, 4]
+# range(1, 7, 10) -> [1]
+# range(1, 7) -> [1, 2, 3, 4, 5, 6]
+# range(7, 1, -2) -> [7, 5, 3]
+
+
