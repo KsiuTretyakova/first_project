@@ -1,9 +1,11 @@
 # Tasks for lesson on the topic of "set() | dict()"
 ```
+Множина
 new_set = set()
 new_set2 = {1, 5, 2}
 ```
 ```
+Словник
 new_dict = {}
 new_dict2 = {"key": "value", "key2": "value2"}
 ```
