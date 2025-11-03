@@ -54,3 +54,42 @@ def task3():
     
     for name_year in sorted_films.items():
         print(name_year)
+        
+#4
+def task4():
+    n = int(input("n: "))
+
+    # squares = {}  # dict()
+    # for i in range(1, n+1):
+    #     # dict[key] = value
+    #     squares[i] = i ** 2
+
+    squares = {i: i ** 2 for i in range(1, n+1)}
+
+    print(squares)
+    
+#5
+def task5():
+    weeks = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    days = [i for i in range(7)]
+
+    # week_dict = {}
+    # for day in range(7):
+    #     week_dict[weeks[day]] = days[day]
+        
+    # week_dict = {weeks[day]: days[day] for day in range(7)}
+
+    # zip(keys, values)
+    # zip(список_ключів, список_значень)
+    # списки ключів та значень повинні співпадати за розміром!!
+    week_dict = dict(zip(weeks, days))
+
+    print(week_dict)
+    
+    # n = int(input())
+    # for day, number in week_dict.items():
+        # if number == n:
+        #     print(day)
+        #     break
+        
+task5()
