@@ -6,6 +6,8 @@ def task6():
     letters = {i: text.count(i) for i in text}
 
     print(letters)
+    
+# task6()
 
 #7
 def task7():
